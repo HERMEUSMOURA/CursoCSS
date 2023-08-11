@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Side de vendas para amanha</title>
+    <style>
+       html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background-image: url(backgroundSite.jpg);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .titulo-site{
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+      width: 100;
+      background-color:pink;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5px 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+    nav img {
+      width: 75px;
+      height: 75px;
+      display: block;
+   }
+
+   nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   nav ul li {
+      margin-left: 15px;
+   }
+
+   li a {
+     text-decoration: none;
+     color: black;
+     font-size: 15px;
+   }
+
+   li a:hover {
+     color: white;
+     text-decoration: underline;
+     font-weight: bolder;
+   }
+
+    .swiper {
+      width: 100%;
+      height: 950px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-image: url(//Bosque_R%3Fgido\ copy\ 2.webp);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+      background-size: cover;
+      border-radius: 40px;
+    }                     
+        
+  
+        .product-section {
+         display: flex;
+         justify-content: space-between;
+       }
+  
+       .product {
+         width: 30%;
+         text-align: center;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+         transition: transform 0.3s ease;
+         background-color: #f5f5f5;
+       }
+    
+       .product:hover {
+         transform: translateY(-5px);
+       }
+  
+       .product a {
+         display: block;
+         text-decoration: none;
+         color: inherit;
+       }
+  
+       .product img {
+         width: 100%;
+         height: auto;
+       }
+  
+       .product h3 {
+         margin-top: 10px;
+       }
+  
+       .product p {
+         margin-top: 5px;
+       }
+       .pricing-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .pricing-table {
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .pricing-table th {
+      background-color: #f5f5f5;
+    }
+    .basket-section {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .comment .avatar{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: #bbb;
+      
+    }
+    .comment .avatar img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment .content {
+      flex: 1;
+    }
+
+    .comment .content .author {
+      font-weight: bold;
+    }
+
+    .comment .content .timestamp {
+      color: #777;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .comment .content .text {
+      margin-top: 5px;
+    }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+               <img src="../novo travalho para amanha/assets/img/logoverdadeiro].jpg" alt="">
+               <h3 class="titulo-site">Rosa Arteira - Artesanato e Confecções</h3> 
+            </div>            
+            <ul class="menu">
+                <li class="menu-opcoes"><a href="" class="menu-link">Veja Nossos Produtos</a></li>
+                <li class="menu-opcoes"><a href="" class="menu-link">Entre em Contato</a></li>
+                <li class="menu-opcoes"><a href="" class="menu-link">Confira nossas Redes sociais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide1.webp" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide4.webp" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide5.webp" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide6.webp" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide7.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/slide8.webp" alt=""></div>
+              <div class="swiper-slide"><img src="../novo travalho para amanha/assets/img/produto3.webp" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <section class="product-section">
+            <div class="product">
+              <a href="#">
+                <img src="../novo travalho para amanha/assets/img/Produto1.webp" alt="">
+                <h3>Panos de Prato Personalizado</h3>
+                <p>Chega de escolher estampas aleatorias de pano de prato genericos, no Rosa Arteira, sua estampa é o seu pano!.</p>
+              </a>
+            </div>
+            <div class="product">
+              <a href="#">
+                <img src="../novo travalho para amanha/assets/img/produto2.webp" alt="">
+                <h3>Produtos Artesanais</h3>
+                <p>Nada melhor para melhorar o estilo e o moral da sua casa ou area de trabalho, em busca de inovar? Rosa Arteira tem oque vc precisa.</p>
+              </a>
+            </div>
+            <div class="product">
+              <a href="#">
+                <img src="../novo travalho para amanha/assets/img/produto3.webp" alt="">
+                <h3>Conjunto De banheiro e Cozinha</h3>
+                <p>Oque e melhor do que dar um toque novo a 2 dos ambientes mais queridos por nos? No Rosa Arteira repaginamos do seu putijão de Gas ate o liquificador.</p>
+              </a>
+            </div>
+          </section>
+          <section class="pricing-section">
+            <h2>Preços dos Produtos</h2>
+            <table class="pricing-table">
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+                <th>Detalhes</th>
+              </tr>
+              <tr>
+                <td>Conjunto de Pano de Prato 4 Peças</td>
+                <td>R$ 40,00</td>
+                <td>Em estoque</td>
+                <td><a href="#" class="button">Detalhes</a></td>
+              </tr>
+              <tr>
+                <td>Conjunto de Mesa Natalina</td>
+                <td>R$ 79,99</td>
+                <td>Em estoque</td>
+                <td><a href="#" class="button">Detalhes</a></td>
+              </tr>
+              <tr>
+                <td>Guardanapos Personalizados</td>
+                <td>R$ 49,99</td>
+                <td>Esgotado</td>
+                <td><a href="#" class="button">Detalhes</a></td>
+              </tr>
+              <tr>
+                <td>Conjunto de Banheiro 12 peças</td>
+                <td>R$ 189,99</td>
+                <td>Em estoque</td>
+                <td><a href="#" class="button">Detalhes</a></td>
+              </tr>
+              <tr>
+                <td>Jogo Completo de Cozinha: Jogos Vorazes</td>
+                <td>R$ 199,99</td>
+                <td>Em estoque</td>
+                <td><a href="#" class="button">Detalhes</a></td>
+              </tr>
+            </table>
+        
+            <div class="basket-section">
+              <h2>Comentários dos Clientes</h2>
+              <div class="comments-section">
+                <div class="comment">
+                  <div class="avatar"><img src="../novo travalho para amanha/assets/img/david.jpg"></div>
+                  <div class="content">
+                    <div class="author">David Gueta</div>
+                    <div class="timestamp">Há 2 horas</div>
+                    <div class="text">Ótimos produtos! Recomendo a todos.</div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="avatar"><img src="../novo travalho para amanha/assets/img/o homem ruim.webp"></div>
+                  <div class="content">
+                    <div class="author">Michael Drumond</div>
+                    <div class="timestamp">Há 1 dia</div>
+                    <div class="text">Adorei a qualidade dos produtos. Vale cada centavo!</div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="avatar"><img src="../novo travalho para amanha/assets/img/carla.jpg"></div>
+                  <div class="content">
+                    <div class="author">Eliana Moore</div>
+                    <div class="timestamp">Há 3 dias</div>
+                    <div class="text">Serviço excelente. Comprarei novamente!</div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="avatar"><img src="../novo travalho para amanha/assets/img/kkkk.png"></div>
+                  <div class="content">
+                    <div class="author">Rebeca Amorin</div>
+                    <div class="timestamp">Há 1 semana</div>
+                    <div class="text">Entrega rápida e produtos bem embalados. Recomendo!</div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="avatar"><img src="../novo travalho para amanha/assets/img/leeeeee.webp"></div>
+                  <div class="content">
+                    <div class="author">Viviane da Costa</div>
+                    <div class="timestamp">Há 2 semanas</div>
+                    <div class="text">Melhor loja de todos os tempos. Produtos incríveis!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+              },
+            });
+        </script>
+             
+    </footer>
+</body>
+</html>

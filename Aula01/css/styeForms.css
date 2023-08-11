@@ -1,0 +1,43 @@
+label{
+    display: block;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+.formCadastro{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+    min-height: 300px;
+    background-image: url(/img/parque.jpg);    
+    background-size: cover; 
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 0 auto;
+
+}
+.btnCadastro{
+border: 1px solid;
+padding: 15px;
+border-radius: 15px;
+display: block;
+margin: 0 auto;
+color: rgb(22, 20, 3);
+background-color:aquamarine;
+width: 30%;
+}
+.campo{
+    width: 80%;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: blue;
+}
+h1{
+    text-align: center;
+    display: block;
+}
+.bg1{
+    background-color: cornflowerblue;
+    background-image: url('/img/carro\ de\ bombeiro.jpeg');
+    background-size: cover;
+}   

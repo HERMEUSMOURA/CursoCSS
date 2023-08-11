@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(249, 211, 140) ;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(248, 172, 41);
+    display: flex;
+    justify-content:space-between;/*eixo principal*/
+    align-items: center;/*eixo secundário*/
+    flex-wrap: wrap;
+    padding: 5px 10px;
+}
+nav img{
+    width: 50px;
+}
+nav ul{
+   list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;/**/
+}
+nav ul li{
+    margin-left: 15px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+li a:hover{
+    color: blue;
+    text-decoration: overline;
+    font-weight: bolder;
+}
+.apresentacao{
+    width: 100%;
+    height: 75vh;    
+}
+.video-apresentacao{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    filter: brightness(25%);
+}
+.titulo-apresentacao{
+    font-size: 3.5rem;/* 4 * tamanho base da fonte */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.link-apresentacao{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 40px;
+}
+.link-apresentacao:hover, .servicos-bloco:hover{
+    background-color: white;
+    color: black;
+}
+.servicos{
+    width: 100%;
+    min-height:150px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.servicos-bloco{
+   /* width: 20%; */
+    flex: 0 1 300px;
+    min-height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px; 
+    font-size: 1.4rem;        
+}
+.servicos-bloco:hover{
+    background-color: white;
+    color: black;
+}
+.feedback{
+    width: 100%;
+    padding: 25px 0;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+} 
+.feedback-bloco{
+    /* width: 28%; */
+    flex:  0 1 350px;
+    padding: 15px;
+    box-shadow: 2px 2px 15px black;
+    text-align: center;
+}
+.feedback-bloco img{
+    width: 100%;
+    height: 300px;
+   border-radius: 50%;
+}
+.feedback-titulo{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2.8rem;
+}
+.feedback-bloco p{
+    font-style: italic;
+    color: rgb(62, 62, 62);
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.feedback-bloco h3{
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 10px;
+}
+.kits{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;   
+}
+.kits-bloco{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    box-shadow: 1px 1px 2px gray;
+    background-color: rgba(220, 220, 220, 0.392);
+}
+.kits-bloco p{
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+}
+.kits-bloco img{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.kits-bloco:nth-child(even){
+    flex-direction: row-reverse;
+}
+.valores{
+    width: 100%;
+    padding: 20px;
+}
+.valores table{
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;   
+}
+table,tr,td,th{
+    border: 1px solid black;
+}
+td{
+    padding: 5px;
+}
+th{
+    background-color: rgb(115, 246, 161);
+}
+footer{
+    background-color: rgb(248, 172, 41);
+    width: 100%;
+    text-align: center;
+}
+.footer-bloco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-bloco img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.valores{
+    background-color: gainsboro;
+}
+
+@media screen and (max-width:700px) {
+    .apresentacao{
+        height: 50vh;    
+    }
+    .video-apresentacao{
+        height: 50vh;    
+    }
+    .titulo-apresentacao{
+        font-size: 1.7rem;
+        top:35%;
+    }
+    .link-apresentacao{
+        font-size: 1.4rem;
+        top:45%;
+    }
+    .kits-bloco{
+        flex-direction: column;
+     }
+    .kits-bloco:nth-child(even){
+        flex-direction: column;
+    }
+    .kits-bloco img{
+        width: 330px;
+    }
+   
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .servicos-bloco {
+        flex-grow: 0.8;
+    }
+    .feedback-bloco{
+        flex-grow: 0.45;
+        margin: 5px 0;
+    }
+
+}

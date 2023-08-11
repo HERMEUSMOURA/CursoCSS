@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+    height: 50px;
+    border: 1px solid green;
+    background-color: antiquewhite;
+    
+}
+ul{
+    padding: 30px;
+}
+.container h1{
+    margin-top: 5px;
+    text-align: center;
+     
+}
+li{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.bloco{
+    width: 20%;
+    min-height: 250px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+}
+.bloco img{
+    width: 80%;
+    display: block;
+    margin: auto;
+    
+
+}
+.conteudo-sobre{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(212,212,252);
+}
+.rodape-sobre{
+    height: 20vh;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(227, 227, 227,0.311);
+}

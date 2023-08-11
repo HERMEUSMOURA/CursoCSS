@@ -1,0 +1,237 @@
+<style>
+    header {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Estilos para as seções de vantagens */
+  #vantagens {
+    padding: 40px;
+    background-color: #ffffff;
+
+  }
+  
+  .vantagem {
+    margin-bottom: 40px;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    margin: auto;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  /* Estilos para as seções de valores */
+  #valores {
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .valor {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a seção de contatos */
+  #contatos {
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 15px;
+    animation-name: entrada;
+    animation-duration: 3s;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label,
+  .contact-form input[type="submit"] {
+    margin-bottom: 15px;
+  }
+  
+  @keyframes entrada {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    body{
+        background-image: url(img/capa\ da\ logo.jpg);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+        nav{
+        width: 100;
+        background-color: white;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    nav img{
+        width: 150px;
+        display: block;
+        
+        
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        margin-left: 15px;
+    }
+    li a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    li a:hover{
+        color:slategray;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+    .swiper {
+      width: 60%;
+      height: 550px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 60px;
+      box-shadow: 2px 2px 15px black;
+      
+    }
+    .ofertas-txt{
+        text-align: center;
+        font-size: 1,8rem;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .logo txt{
+        color: black;
+        text-align: center;
+        
+    }
+
+.feedback{
+    width: 100%;
+    padding: 25px 0;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+} 
+.feedback-bloco{
+    /* width: 28%; */
+    flex:  0 1 350px;
+    padding: 15px;
+    box-shadow: 2px 2px 15px black;
+    text-align: center;
+}
+.feedback-bloco img{
+    width: 100%;
+    height: 300px;
+   border-radius: 50%;
+}
+.feedback-titulo{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2.8rem;
+}
+.feedback-bloco p{
+    font-style: italic;
+    color: rgb(62, 62, 62);
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.feedback-bloco h3{
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 10px;
+}
+.valores-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.valores-table tr {
+  background-color: #f8f8f8;
+}
+
+.valores-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.valores-table td:first-child {
+  width: 100px;
+}
+
+.valores-table p {
+  margin: 0;
+}
+
+    
+    </style>

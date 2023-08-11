@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/styeForms.css">
+</head>
+<body class="bg1">
+    <h1>Formulario de Cadastro</h1>
+    <div class="formCadastro">
+        <label for="">Nome completo</label>
+        <input class="campo" type="text" name="nome" required placeholder="Conforme Identidade">
+        <label for="">Email</label>
+        <input class="campo" type="email"name="email" required placeholder="Email valido">
+        <label for="">Cargo</label>
+        <input class="campo" type="text" name="cargo" required placeholder="Dentro da lista de vagas">
+        <label for="">Data de Nascimento</label>
+        <input type="date" name="dtNasc" id="" required>
+        <label for="">Escolaridade</label>
+        <select name="" id="">
+            <option value="">Fundamental</option>
+            <option value="">Medio</option>
+            <option value="">Tecnico</option>
+            <option value="">Superior</option>        
+        </select>
+        <label for="">Disponibilidade de Horario: </label>
+        <input type="checkbox">Manhã
+        <input type="checkbox">Tarde
+        <input type="checkbox">Noite
+        <input type="checkbox">Sabados
+        <label for="">Estado Civil</label>
+        <input type="radio" name="ec">Solteiro(a)
+        <input type="radio" name="ec">Casado(a)
+        <input type="radio" name="ec">Divorciado(a)
+        <input type="radio" name="ec">viuvo(a)
+        <input type="radio" name="ec">outros
+        <label for="">Comprovante de residencia</label>
+        <input type="file" name="compResidencia" required>
+        <label for="">Treinos realizados</label>
+        <input type="checkbox" name="IB">Informatica basica
+        <input type="checkbox" name="BD">Brigadista
+        <input type="checkbox" name="RA">Recursos Avançados
+        <label for="">Informações adicionais</label>
+        <textarea name="" id="" cols="100" rows="10">
+
+        </textarea>
+        <input type="submit" name="enviar" class="btnCadastro">
+    </div>
+        
+    
+</body>
+</html>

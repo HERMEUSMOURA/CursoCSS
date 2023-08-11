@@ -1,0 +1,65 @@
+.formContato{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    height: 350px;
+    text-align: center;        
+    background-image: url('/img/floresta-amazonica.webp');
+    background-size:cover;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+    
+    
+    
+}
+body{
+    background-image: url('img/parque.jpg');
+    background-size: cover;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 1px solid;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+}
+.btn{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    color: rgb(22, 20, 3);
+    background-color: goldenrod;
+    width: 30%;
+
+
+}
+.btn:hover{
+    background-color: greenyellow;
+    color:black;
+}
+::placeholder{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+textarea{
+    border-radius: 15px;
+    padding: 28px;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(241, 198, 142);
+    width: 80px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid;
+}
+input[type="text"],[type="email"]{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

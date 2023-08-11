@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    body {
+  background-image: url(img/capa\ da\ logo.jpg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+nav {
+  width: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav img {
+  width: 150px;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+li a:hover {
+  color: slategray;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.swiper {
+  width: 60%;
+  height: 550px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 60px;
+  box-shadow: 2px 2px 15px black;
+}
+
+.ofertas-txt {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.logo txt {
+  color: black;
+  text-align: center;
+}
+
+#vantagens {
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.vantagem {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#valores {
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.valor {
+  margin-bottom: 20px;
+}
+
+#contatos {
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 650px;
+  background-color: rgba(255, 255, 255, 0.521);
+  padding: 15px;
+  animation-name: entrada;
+  animation-duration: 3s;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label,
+.contact-form input[type="submit"] {
+  margin-bottom: 15px;
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback {
+  width: 100%;
+  padding: 25px 0;
+  background-color: gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.feedback-bloco {
+  flex: 0 1 350px;
+  padding: 15px;
+  box-shadow: 2px 2px 15px black;
+  text-align: center;
+}
+
+.feedback-bloco img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.feedback-titulo {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2.8rem;
+}
+
+.feedback-bloco p {
+  font-style: italic;
+  color: rgb(62, 62, 62);
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.feedback-bloco h3 {
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.valores-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.valores-table tr {
+  background-color: #f8f8f8;
+}
+
+.valores-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.valores-table td:first-child {
+  width: 100px;
+}
+
+.valores-table p {
+  margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/stanley8961.jpg" alt="" class="logo-img">
+                <h3 class="logo-txt">Loja Stanley - Sinta o Diferente</h3>
+            </div>
+            <ul class="menu-principal">
+               <li class="menu-item"><a class="menu-link" href="">Personalização</a></li>
+               <li class="menu-item"><a class="menu-link" href="">Consulta de Estoque</a></li>
+               <li class="menu-item"><a class="menu-link" href="">Firmar parceria</a></li>
+               <li class="menu-item"><a class="menu-link" href="">Novos Modelos</a></li>
+               <li class="menu-item"><a class="menu-link" href="">Outros serviços</a></li>
+
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="slide"></section>
+        <h2 class="ofertas-txt">Ofertas da Semana</h2>
+        <div class="ofertas-slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/copo produto.jpg"></div>
+                  <div class="swiper-slide"><img src="img/copo-aproduto2.jpg"></div>
+                  <div class="swiper-slide"><img src="img/copoproduto3.png"></div>
+                  <div class="swiper-slide"><img src="img/copo-apresentação.jpg"></div>
+                  <div class="swiper-slide"><img src="img/kkkkkenganarico.png"></div>
+                  <div class="swiper-slide"><img src="/assets/img/produtos/prod(6).jpg"></div>
+                  <div class="swiper-slide"><img src="/assets/img/produtos/prod(7).jpg"></div>
+                  <div class="swiper-slide"><img src="/assets/img/produtos/prod(8).jpg"></div>
+                  <div class="swiper-slide"><img src="/assets/img/produtos/prod(9).jpg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <section id="vantagens">
+            <h2>Sinta o novo</h2>
+        
+            <div class="vantagem">
+              <div class="animacao"></div>
+              <h3>Vantagem 1: Eficiência Surpreendente</h3>
+              <p>Mais nova tecnologia de de Isolamento termico</p>
+              <p>Seja no meio de um verão escaldante ou de um inverno riguroso, sua bebida permanece a na temperatura ideal.</p>
+              <a href="#" class="cta-button">Experimente agora mesmo!</a>
+            </div>
+        
+            <div class="vantagem">
+              <div class="animacao"></div>
+              <h3>Vantagem 2: Qualidade Excepcional</h3>
+              <p>2 Camadas de isolamento termico em metal de alta intensidade</p>
+              <container class="feedback">
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+              </container>
+              <a href="#" class="cta-button">Peça já o seu!</a>
+            </div>
+        
+            <div class="vantagem">
+              <div class="animacao"></div>
+              <h3>Vantagem 3: Suporte Personalizado</h3>
+              <p>Voce Tem garantia de entrega do seu produto de maneira facil e rapida, com tudo o suporte que podemos oferecer</p>
+              <container class="feedback">
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+                <div class="feedback-bloco">
+                    <img src="#" alt="">
+                    <h3>#</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+                </div>
+              </container>
+              <a href="#" class="cta-button">Entre em contato agora mesmo!</a>
+            </div>
+        </section>
+        
+        <section id="valores">
+            <h2>Nossos Valores</h2>
+            <table class="valores-table">
+              <tr>
+                <td>
+                  <div class="animacao"></div>
+                </td>
+                <td>
+                  <p>Modelo base - R$220.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="animacao"></div>
+                </td>
+                <td>
+                  <p>Modelo Woof Power - R$320.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="animacao"></div>
+                </td>
+                <td>
+                  <p>Modelo Premium - R$500.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="animacao"></div>
+                </td>
+                <td>
+                  <p>Modelo Vip - R$2000.</p>
+                </td>
+              </tr>
+            </table>
+        </section>    
+          
+            
+        </section>
+        
+        <section id="contatos">
+            <h2>Entre em Contato</h2>
+            <div class="animacao"></div>
+            <p>Informações de contato: telefone, e-mail, endereço.</p>
+            <form class="contact-form">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+              
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+              
+                <input type="submit" value="Enviar" href="#" class="cta-button">Fale Conosco Agora!
+            </form>
+            
+        </section>      
+
+    </main>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    </footer>  
+</body>
+</html>

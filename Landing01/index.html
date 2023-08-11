@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="shortcut icon" href="/assets/img/cake.png" type="image/x-icon">
+    <title>Página de Vendas</title> 
+    <style>
+        .contato-whats{
+            position: sticky;
+            bottom: 10px;
+            width: 72px;
+            height: 72px;
+            float: right;
+            margin-right: 20px;
+        }
+        @media print {
+            .apresentacao{
+                display: none;
+            }
+            *{
+                background-color: white;
+                color: black;
+            }
+            video{
+                display: none;
+            }
+            img{
+                display: none;
+            }
+        }
+        
+    </style>   
+</head>
+<body>
+    <nav>
+        <img src="assets/img/cake.png" alt="">
+        <ul>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Kits Eventos</a></li>
+            <li><a href="#">Valores</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="apresentacao">
+            <video class="video-apresentacao" src="assets/video/video.mp4" autoplay loop></video>
+            <h1 class="titulo-apresentacao">Kit Festa - Vovó Bondade</h1>
+            <a href="#" class="link-apresentacao">Conheça os Kits</a>
+        </section>
+        <section class="servicos">
+            <div class="servicos-bloco"><a href="">Buffet</a></div>
+            <div class="servicos-bloco"><a href="">Mesas e Cadeiras</a></div>
+            <div class="servicos-bloco"><a href="">distribuidora</a></div>
+            <div class="servicos-bloco"><a href="">Confeitaria e Padaria</a></div>
+        </section>
+        <h2 class="feedback-titulo">Feedback dos Clientes</h2>
+        <section class="feedback">
+            <div class="feedback-bloco">
+                <img src="assets/img/ricardo.jpg" alt="">
+                <h3>Ricardo Piologo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+            </div>
+            <div class="feedback-bloco">
+                <img src="assets/img/rodrigo.jpg" alt="">
+                <h3>Rodrigo Piologo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+            </div>
+            <div class="feedback-bloco">
+                <img src="assets/img/73040_v9_ba.jpg" alt="">
+                <h3>Chuck Norris</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sed beatae veniam, tempore aut saepe quos omnis, itaque odio neque impedit a? Odit nihil quae magni animi qui autem temporibus.</p>
+            </div>
+        </section> <!-- Fim do bloco feedback -->
+        <h2 class="feedback-titulo">Kits para eventos</h2>
+        <section class="kits">
+            <div class="kits-bloco">
+                <img src="assets/img/evento1.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem placeat tenetur nihil neque inventore sit vel magni suscipit labore repellendus adipisci, illo odit vero aut vitae necessitatibus commodi eius quaerat.</p>
+            </div>
+            <div class="kits-bloco">
+                <img src="assets/img/evento2.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem placeat tenetur nihil neque inventore sit vel magni suscipit labore repellendus adipisci, illo odit vero aut vitae necessitatibus commodi eius quaerat. ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsa tempore odio molestiae aspernatur voluptatum inventore labore ut enim vero rerum consequuntur, hic laborum eaque provident officiis reiciendis cumque veniam!</p>
+            </div>
+            <div class="kits-bloco">
+                <img src="assets/img/evento3.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem placeat tenetur nihil neque inventore sit vel magni suscipit labore repellendus adipisci, illo odit vero aut vitae necessitatibus commodi eius quaerat. ipsum dolor sit amet consectetur, adipisicing elit. Debitis, eius quaerat totam perferendis aut fugiat at? Veritatis esse, laudantium nihil nemo voluptatum minus exercitationem facilis aliquam ex eum nam ullam!</p>
+            </div>
+            <div class="kits-bloco">
+                <img src="assets/img/evento3.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem placeat tenetur nihil neque inventore sit vel magni suscipit labore repellendus adipisci, illo odit vero aut vitae necessitatibus commodi eius quaerat. ipsum dolor sit amet consectetur, adipisicing elit. Debitis, eius quaerat totam perferendis aut fugiat at? Veritatis esse, laudantium nihil nemo voluptatum minus exercitationem facilis aliquam ex eum nam ullam!</p>
+            </div>
+        </section>
+        <h2 class="feedback-titulo">Valores Promocionais</h2>
+        <section class="valores">
+                <table>
+                    <tr>
+                        <th>Serviços</th>    
+                        <th>Horários</th>
+                        <th>Valores</th>
+                    </tr>
+                    <tr>
+                        <td>Mesas e Cadeiras</td>
+                        <td>Manhã</td>
+                        <td>R$200,00 - R$1000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Buffet</td>
+                        <td>Manhã</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Confeitaria</td>
+                        <td>Tarde</td>
+                        <td>R$50,00 - R$1000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Distribuidora</td>
+                        <td>Noite</td>
+                        <td>R$ 1.500,00 - R$20.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote completo</td>
+                        <td>Agendamento</td>
+                        <td>Consultar Adm</td>
+                    </tr>
+                </table>
+        </section>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Luiz Gustovo Cruz Freire</h3>
+        <div class="footer-bloco">
+            <img src="assets/img/instagram.png" alt="">
+            <img src="assets/img/facebook.png" alt="">
+            <img src="assets/img/tiktok.png" alt="">
+            <img src="assets/img/linkedin.png" alt="">
+        </div>
+    </footer>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=5592981192078&text=Tenho%20uma%20d%C3%BAvida...">
+        <img src="assets/img/whatsapp.png" class="contato-whats" alt="">
+    </a>
+</body>
+</html>
